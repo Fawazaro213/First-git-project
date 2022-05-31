@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0c1b;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.like p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80.05%;
+    height: 447px;
+    /* display: flex; */
+}
+
+.note {
+    width: 46.4%;
+    height: 100%;
+    background-color: #1c1938;
+    padding: 30px;
+    padding-right: 100px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+}
+
+.like {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ed {
+    color: #a760d6;
+}
+
+.img, .color, img {
+    border-radius: 0 10px 10px 0;
+    border: 0;
+}
+
+.img {
+    width: 53.6%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+    background-color: #2d123bc7;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* height: 90%; */
+        height: 50rem;
+        text-align: center;
+    }
+
+    .note, .img {
+        width: 100%;
+        height: 70%;
+        border-radius: 0 0 10px 10px;
+        border: 0;
+    }
+
+    .note {
+        padding: 30px;
+    }
+
+    .img, .color, img {
+        border-radius: 10px 10px 0 0;
+        border: 0;
+    }
+
+    .like {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 120px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    img {
+        right: 0px;
+    }
+}
